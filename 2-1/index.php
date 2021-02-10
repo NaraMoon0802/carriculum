@@ -22,7 +22,23 @@ echo $y;
 echo '<br>';
 
 $message1 = "Good night";
-var_dump($message1);
+var_dump($message1); //var_dumpは()の変数の型と長さ、数を示すメソッド。
 var_dump($x);
 var_dump($y);
+echo '<br>';
+
+$frag = true;
+var_dump($frag); 
+// 対象が真偽値(true or false)なので示す型はbool（booleanの略）
+
+$emp = null;
+var_dump($emp);
 ?>
+
+<?php
+echo "<br>";
+define("ADMIN_EMAIL"/*第一引数で定数名*/, "y-group@gmail.com"/*第二引数で定数*/);
+echo ADMIN_EMAIL; //定義するときは文字列指定。呼び出す時は定数名だけ
+//主にDB操作とかで役に立つよ！
+?>
+
