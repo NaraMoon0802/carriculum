@@ -16,12 +16,13 @@ if (in_array("Korea", $countries)/*==true*/){
     echo "ほかの国に行こう！";
 }
 echo "<br>";
-$connect_c= implode("@", $countries);
+$connect_c= implode("@", $countries);//配列の要素をすべて連結する。＠は間に入る
 echo $connect_c;
 echo "<br>";
 var_dump($connect_c);
 echo "<br>";
-var_dump(explode("@", $connect_c));//配列にechoは使えないよ！
+var_dump(explode("@", $connect_c));//文字列を配列に変換する。＠は排除
+//配列にechoは使えないよ！
 echo "<br>";
 $sum="1+2+3+4";
 var_dump(explode("+", $sum));
