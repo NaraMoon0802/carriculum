@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+.wrapper{
+    height: 815px;
+    background-color: #808080;
+}
+.title{
+    border-bottom: solid 3px #ffffff;
+    padding-top: 300px;
+}
+.title>p{
+    width: 160px;
+    margin: 0 auto;
+}
+.wrapper>form{
+    width: 250px;
+    margin: 0 auto;
+}
