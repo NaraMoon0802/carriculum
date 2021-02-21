@@ -3,7 +3,7 @@ $name=$_POST["hidden_name"];
 $number=$_POST["number"];
 $language=$_POST["language"];
 $command=$_POST["command"];
-var_dump($name);
+var_dump($_POST);
 ?>
 <p><?php echo $name?>さんの結果は・・？</p>
 <p>①の答え</p>

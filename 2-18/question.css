@@ -3,6 +3,18 @@
     padding: 0;
 }
 .wrapper{
-    height: 800px;
+    height: 810px;
     background-color: #808080;
+    color: #ffffff;
+    font-family: "游明朝";
+    text-align: center;
+    padding-top: 30px;
+
 }
+form>h2, input{
+    margin-top: 20px;
+}
+.submit{
+    border-radius: 3px;
+}
+

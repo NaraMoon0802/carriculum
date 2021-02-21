@@ -22,7 +22,7 @@ $command=["join", "select", "insert", "update"];
 <input type="radio" name="command" value = <?php $vc ?>/><?php echo $vc?>
 <?php }?>
 <br>
-<input type="submit" value="回答する">
-<input type="hidden" name="hidden_name" value= "Natsuki">
+<input class="submit" type="submit" value=" 回答する ">
+<input type="hidden" name="hidden_name" value= "<?php $name?>">
 </form>
 </div>
