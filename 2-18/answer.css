@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    height: 770px;
+    background-color: #808080;
+    text-align: center;
+    color: #ffffff;
+    font-family: "游明朝";
+    padding-top: 50px;
+}
+.wrapper>p{
+    margin-top: 20px;
+}
