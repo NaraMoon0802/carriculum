@@ -70,7 +70,14 @@
         <?php
         
         foreach ($data as $key=>$value){
-            echo "<tr><td>".$value["id"]."</td><td>".$value["title"]."</td><td>".$value["category_name"]."</td><td>".$value["comment"]."</td><td>".$value["created"]."</td><tr>";
+            if($value["category_no"] == "1"){
+                $category_name = "食事";
+            } elseif ($value["category_no"] == "2"){
+                $category_name = "旅行";
+            }else {
+                $category_name = "その他";
+            }
+            echo "<tr><td>".$value["id"]."</td><td>".$value["title"]."</td><td>".$category_name."</td><td>".$value["comment"]."</td><td>".$value["created"]."</td><tr>";
         }
         ?>
     </table>

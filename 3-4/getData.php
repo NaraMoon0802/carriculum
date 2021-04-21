@@ -30,15 +30,8 @@ class getData{
      * @return array $post_data 記事情報
      */
     public function getPostData(){
-        $getposts_sql = "SELECT id, title, category_name, comment, created FROM posts JOIN category ON category. category_no = posts. category_no ORDER BY id desc;";
-        $stmt= $this->pdo->prepare($getposts_sql);
-        $res= $stmt->execute();
-        if ($res !== false){
-            $post_data = [];
-            while ($result = $stmt->fetch(PDO::FETCH_ASSOC)){
-                array_push($post_data, $result);
-            }
-        }
+        $getposts_sql = "SELECT * FROM posts ORDER BY id desc";
+        $post_data = $this->pdo->query($getposts_sql);
         return $post_data;
     }
 }
